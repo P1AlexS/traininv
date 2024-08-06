@@ -6,7 +6,7 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Input
 
 
-class training:
+class Training:
     def train_model(self):
         print("Data Init")
         #Hier müssen später die Daten erst geladen werden ins projekt, wenn data leer neuste daten ziehen, wenn data nicht leer überspringen, in ingist data einen test ausführen der die bilder durchgeht ob fehler
