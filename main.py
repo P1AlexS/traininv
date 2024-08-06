@@ -1,4 +1,5 @@
 from catOrDogClassifier.greeter import Greeter
 
+
 greeter = Greeter()
-greeter.hello_world()
+greeter.train_model()

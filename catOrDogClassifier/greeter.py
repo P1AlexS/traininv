@@ -1,3 +1,5 @@
+import os
 class Greeter:
-    def hello_world(self):
-        print("Hello, World!")
+    def train_model(self):
+        directory = os.path.join(os.path.dirname(__file__), 'data')
+        print(f'Directory path: {directory}')
