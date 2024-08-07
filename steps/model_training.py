@@ -15,6 +15,7 @@ class Training:
         self.epochs = epochs
         self.validation_split = validation_split
         self.batch_size = batch_size
+        dagshub.init(repo_owner='P1AlexS', repo_name='traininv', mlflow=True)
 
     def build_and_train_model(self, x: np.ndarray, y: np.ndarray):
       with mlflow.start_run() as run:
