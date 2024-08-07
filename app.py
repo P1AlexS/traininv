@@ -30,9 +30,9 @@ demo = gr.Interface(
     fn=predict_image,
     inputs=gr.Image(),
     outputs=gr.Label(num_top_classes=2),
-    title="Bildklassifikator",
-    description="Laden Sie ein Bild hoch, um eine Klassifikation durchzuführen."
+    title="Hund oder Katze Klassifikation",
+    description="Laden sie ein Bild hoch"
 )
 
-demo.launch(share=True,
-            server_name="0.0.0.0", server_port=7860)
+demo.launch(share=False,
+            server_name="0.0.0.0", server_port=7861)

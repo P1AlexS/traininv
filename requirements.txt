@@ -3,7 +3,7 @@ opencv-python
 gradio
 pandas
 dvc
-dagshub
+dagshub==0.3.34
 mlflow
 numpy
 matplotlib

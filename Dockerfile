@@ -1,13 +1,17 @@
 FROM python:3.11
 
-ARG GRADIO_SERVER_PORT=7860
-ENV GRADIO_SERVER_PORT=${GRADIO_SERVER_PORT}
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0
 
-RUN apt update -y && apt install awscli -y
 WORKDIR /app
 
-COPY . /app
+COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["python3", "/app/app.py"]
+COPY . .
+
+EXPOSE 7861
+
+CMD ["python", "app.py"]
