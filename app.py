@@ -1,8 +1,6 @@
 import gradio as gr
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predictions
 import os
 from PIL import Image
 
@@ -36,5 +34,5 @@ demo = gr.Interface(
     description="Laden Sie ein Bild hoch, um eine Klassifikation durchzuführen."
 )
 
-# Gradio-Anwendung starten
-demo.launch()
+demo.launch(share=True,
+            server_name="0.0.0.0", server_port=7860)
