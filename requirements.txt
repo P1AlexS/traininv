@@ -3,6 +3,7 @@ opencv-python
 gradio
 pandas
 dvc
+dagshub
 mlflow
 numpy
 matplotlib

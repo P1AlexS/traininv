@@ -1,7 +1,5 @@
 import os
 from pipelines.training_pipeline import training_pipeline
-from catOrDogClassifier.training import Training
-from catOrDogClassifier.prediction import Prediction
 
 # predictor = Prediction(model_path)
 #
@@ -13,7 +11,7 @@ from catOrDogClassifier.prediction import Prediction
 image_size = 50
 epochs = 1
 validation_split = 0.1
-batch_size = 16
+batch_size = 32
 
 directory = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data'))
 
